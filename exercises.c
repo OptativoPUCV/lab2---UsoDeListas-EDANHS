@@ -105,6 +105,7 @@ void copia_pila(Stack* P1, Stack* P2) {
   val = (int *) top(P3);
   while(val != NULL){
     push(P2, val);
+    push(P1, val);
     pop(P3);
     val = (int *) top(P3);
   }
